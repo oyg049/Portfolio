@@ -1,89 +1,174 @@
-# 개발자 포트폴리오
+# Developer Portfolio
 
-## 소개
+## 👋 Introduction
+**.NET 기반의 데스크톱 애플리케이션 개발(WPF)**을 주력으로 하며, **웹 프론트엔드 개발** 역량을 겸비한 소프트웨어 엔지니어 입니다.
 
-본 포트폴리오는 C#, C++, .NET (Core / Framework), WPF 등 다양한 기술 스택을 활용하여 개발된 프로젝트들을 소개합니다. 키오스크 브라우저, POS 시스템과 같은 상용 애플리케이션부터 산업용 제어 시스템(철도, RFID), e-러닝 플랫폼, 하드웨어 유틸리티, 음악 연주 프로그램에 이르기까지 폭넓은 분야의 경험을 포함하고 있습니다.
-
-이 프로젝트들은 복잡한 비즈니스 로직, 하드웨어 연동, 실시간 데이터 통신, 데이터베이스 설계 및 클라이언트-서버 아키텍처에 대한 깊은 이해를 보여줍니다.
-
----
-
-## 보유 기술
-
-*   **언어:** C#, C++, SQL
-*   **프레임워크 & 플랫폼:** .NET (8, 6, 4.x), .NET Framework, WPF, Entity Framework
-*   **아키텍처:** MVVM, 서비스 지향 아키텍처 (SOA)
-*   **데이터베이스:** SQLite, MS-SQL, MySQL
-*   **프로토콜 & 통신:** REST API, MQTT, Modbus, TRDP, WebSocket, SOAP, Serial, TCP/IP
-*   **하드웨어 연동:** RFID 리더기, 신용카드 단말기, 영수증 프린터
-*   **기타:** Inno Setup, Git, 리포팅
+강력한 퍼포먼스와 안정성이 요구되는 **산업용 애플리케이션** 및 **제조 현장(Kiosk, POS)** 개발에 전문성을 가지고 있습니다. 또한, 이러한 경험을 바탕으로 **웹 프론트엔드 개발** 영역에서도 직관적인 UI/UX와 **GIS(공간 정보)** 시각화 기능 구현을 가지고 있습니다.
 
 ---
 
-## 프로젝트 상세
+## 🛠 Skills
 
-### 1. PEAK9 Rail
-*   **설명:** 철도 시스템 또는 관련 장비 개발을 도와줄 시뮬레이션 데스크톱 애플리케이션입니다. .NET 8과 WPF 기반의 최신 MVVM 아키텍처로 설계되었으며, 산업 현장에서 사용되는 다양한 표준 프로토콜을 통해 하드웨어 및 IoT 시스템과 통신합니다.
-*   **주요 기능:**
-    *   Modbus, 직렬 포트를 통한 산업용 하드웨어 통신
-    *   MQTT 프로토콜을 이용한 IoT 시스템 연동
-    *   네트워크 패킷 캡처(`SharpPcap`)를 통한 고급 진단 기능
-    *   다국어 지원 및 백그라운드 서비스 호스팅
-    *   로컬 DB(SQLite)를 사용한 데이터 관리
-*   **사용 기술:** C#, .NET 8, WPF, MVVM (CommunityToolkit.Mvvm), SQLite (EF Core), MQTT, Modbus, SharpPcap, Serial Port
+### Languages & Core
+- **C#** (.NET Framework 4.x, .NET Core) **(Expert)**
+- **JavaScript (ES6+)** / **TypeScript**
+- **HTML5 / CSS3 (SCSS)**
+- **SQL** (SQLite)
 
-### 2. STEP VT (Smart Training & E-learning Platform - Virtual Training)
-*   **설명:** 이러닝 가상 교육을 위한 종합 데스크톱 클라이언트입니다. 수강생이 강의를 듣고, 진도율을 추적하며, 교육 콘텐츠와 상호작용할 수 있는 포털 형태의 WPF 애플리케이션입니다.
-*   **주요 기능:**
-    *   REST API를 통한 클라이언트-서버 아키텍처
-    *   과정 카탈로그, 수강 신청, 학습 진도 관리
-    *   포인트 및 랭킹 시스템을 통한 게이미피케이션 요소 도입
-    *   실시간 알림(MQTT, UWP Notifications) 및 로컬 캐싱(SQLite)
-    *   런처 등 다른 프로세스와의 통신을 위한 Named Pipe 활용
-*   **사용 기술:** C#, .NET Framework 4.8, WPF, MVVM, SQLite (EF Core), REST API, MQTT, Named Pipes
+### Desktop (.NET)
+- **Frameworks**: **WPF (Windows Presentation Foundation)**, **Entity Framework Core**
+- **Architecture**: **MVVM Pattern** (MVVM), REST API Design
+- **Communication**: **MQTT**, WebSocket, Named Pipes, TCP/IP, SOAP
+- **Hardware Control**: POS Peripherals, Serial Communication, MQTT, Modbus, TRDP
 
-### 3(1). Flywall
-*   **설명:** 전관판 영상/현황 디스플레이 기능을 하는 유칠리티입니다. 백그라운드 스케줄러, 실시간 차트, 시스템 트레이 아이콘 등 고급 기능을 포함하며, 별도의 라이선스 키 생성기를 통해 관리되는 상용 애플리케이션의 특징을 가집니다.
-*   **주요 기능:**
-    *   `LiveCharts`를 이용한 데이터 시각화 대시보드
-    *   `Quartz.NET`을 이용한 백그라운드 작업 스케줄링
-    *   WebDAV를 통한 원격 파일 관리 및 동기화
-    *   SQLite 데이터베이스를 사용한 로컬 데이터 저장
-*   **사용 기술:** C#, .NET 6, WPF, SQLite (EF Core), LiveCharts, Quartz.NET, WebDAVClient
+### Frontend (Web)
+- **Frameworks**: **JavaScript**, **jQuery**, **React** (Vite, Next.js)
+- **State Management**: Redux, Context API
+- **UI Libraries**: Ant Design, Material UI
+- **GIS/Maps**: **OpenLayers**, Google Maps API, Shapefile, SVG
 
-### 3(2). Mac Certification Key Generator
-*   **설명:** `Flywall`과 같은 다른 소프트웨어에 사용될 라이선스 키를 생성하는 간단한 유틸리티입니다. 이름에서 유추할 수 있듯이, 네트워크 카드의 MAC 주소와 같은 하드웨어 식별자를 사용하여 특정 장비에 종속되는 키를 생성하는 것으로 보입니다.
-*   **주요 기능:**
-    *   하드웨어 정보(MAC 주소 등) 기반 라이선스 키 생성
-    *   WPF 기반의 간단하고 직관적인 UI
-*   **사용 기술:** C#, .NET 8, WPF
+### Tools & Collaboration
+- **Git / GitLab**
+- **Visual Studio / VS Code**
 
-### 4. LiveCoach
-*   **설명:** 아이스하키 분석을 위한 고도의 스포츠 분석 애플리케이션입니다. 비디오 재생, 데이터 시각화, 3D 렌더링을 결합하여 코치가 경기 영상을 분석하고 선수의 움직임 및 통계를 추적할 수 있도록 설계되었습니다.
-*   **주요 기능:**
-    *   VLC 플레이어 연동을 통한 경기 영상 재생 및 제어
-    *   `HelixToolkit`을 이용한 선수 움직임의 3D 시각화
-    *   `LiveCharts`를 활용한 통계 데이터 대시보드
-    *   MySQL 및 SQLite 데이터베이스 연동
-    *   WebSocket을 통한 실시간 데이터 통신
-*   **사용 기술:** C#, .NET Framework 4.6.1, WPF, MVVM, VLC, HelixToolkit, LiveCharts, MySQL, SQLite, WebSocket
+---
 
-### 5. SAPOON (ksp-pos)
-*   **설명:** 사푼사푼 카페 종합 POS(Point-of-Sale) 시스템입니다. 주문, 결제, 재고, 매장 관리 등 매장 운영에 필요한 모든 기능을 갖춘 WPF 기반의 상용 애플리케이션입니다.
-*   **주요 기능:**
-    *   주문 및 결제 처리 (신용카드, 현금, 상품권)
-    *   KICC 정보통신 등 국내 결제 게이트웨이 연동
-    *   영수증 프린터, 바코드 리더 등 주변 하드웨어 제어
-    *   고객 관리, 프로모션, 쿠폰 및 기프트카드 기능
-    *   SQLite 기반의 로컬 데이터베이스 및 외부 서버 통신(SOAP, WebSocket)
-*   **사용 기술:** C#, .NET Framework 4.8, WPF, MVVM, SQLite (EF6), SOAP, WebSocket, 하드웨어 연동(DLL)
+## 🖥️ Desktop & POS Projects (.NET/WPF)
 
-### 6. AlcoBrowser
-*   **설명:** 산업용 키오스크를 위해 개발된 맞춤형 데스크톱 브라우저입니다. Microsoft Edge의 WebView2 컨트롤을 사용하여 웹 콘텐츠를 렌더링하며, 원격 제어 및 실시간 통신을 위한 MQTT 기능이 포함되어 있습니다.
-*   **주요 기능:**
-    *   WPF와 Edge WebView2 컨트롤의 통합
-    *   MQTT 프로토콜을 통한 실시간 양방향 통신
-    *   설정 페이지를 통한 브라우저 기능 맞춤화
-    *   Inno Setup을 통한 배포 패키지 제작
-*   **사용 기술:** C#, .NET Framework 4.8, WPF, MVVM, WebView2, M2Mqtt (MQTT), Inno Setup
 
+### 🎓 STEP VT (Smart Training & E-learning Platform - Virtual Training)
+**Description**
+이러닝 가상 교육을 위한 종합 데스크톱 클라이언트입니다. 수강생이 강의를 듣고, 진도율을 추적하며, 교육 콘텐츠와 상호작용할 수 있는 포털 형태의 WPF 애플리케이션입니다.
+
+- **Stack**: C#, .NET Framework 4.8, WPF, MVVM, SQLite (EF Core), REST API, MQTT, Named Pipes
+- **Key Features**:
+  - REST API를 통한 클라이언트-서버 아키텍처
+  - 과정 카탈로그, 수강 신청, 학습 진도 관리
+  - 포인트 및 랭킹 시스템을 통한 게이미피케이션 요소 도입
+  - 실시간 알림(MQTT, UWP Notifications) 및 로컬 캐싱(SQLite)
+  - 런처 등 다른 프로세스와의 통신을 위한 Named Pipe 활용
+
+### ☕ SAPOON (POS System)
+**Description**
+사푼사푼 카페 프랜차이즈를 위한 종합 POS 시스템입니다. 주문 결제부터 재고 관리, 하드웨어 제어까지 매장 운영의 전 과정을 지원합니다.
+
+- **Stack**: C#, .NET Framework 4.8, WPF, SOAP, WebSocket, Hardware Integration
+- **Key Features**:
+  - 신용카드, 현금, 포인트 등 다양한 결제 수단 지원 (KICC 연동)
+  - 영수증 프린터, 바코드 스캐너 등 주변기기 제어
+  - SOAP 및 소켓 통신을 이용한 서버 데이터 동기화
+
+### 🌐 AlcoBrowser
+**Description**
+산업 현장에 특화된 커스텀 브라우저입니다. Edge WebView2 엔진을 탑재하여 최신 웹 표준을 지원하며, 현장 장비와의 통신 기능을 내장하고 있습니다.
+
+- **Stack**: C#, .NET Framework 4.8, WPF, WebView2, MQTT, Inno Setup
+- **Key Features**:
+  - WebView2 기반의 안정적인 웹 콘텐츠 렌더링
+  - 브라우저 레벨에서의 MQTT 통신 지원
+  - 현장 요구사항에 맞춘 키오스크 모드 및 제어 기능
+
+### 🚂 PEAK9 Rail
+**Description**
+철도 시스템 또는 관련 장비 개발을 도와줄 시뮬레이션 데스크톱 애플리케이션입니다. .NET 8과 WPF 기반의 최신 MVVM 아키텍처로 설계되었으며, 철도 산업 현장에서 사용되는 다양한 표준 프로토콜을 통해 하드웨어 및 IoT 시스템과 통신합니다.
+
+- **Stack**: C#, .NET 8, WPF, MVVM (CommunityToolkit.Mvvm), SQLite (EF Core), TRDP, MQTT, Modbus, Serial Port, C++ 마샬링
+- **Key Features**:
+  - Modbus, 직렬 포트를 통한 산업용 하드웨어 통신
+  - MQTT 프로토콜을 이용한 IoT 시스템 연동
+  - 다국어 지원 및 백그라운드 서비스 호스팅
+  - 로컬 DB(SQLite)를 사용한 데이터 관리
+
+### 🏒 LiveCoach
+**Description**
+아이스하키 경기 분석을 위한 전문가용 스포츠 분석 툴입니다. 영상 재생과 3D 시각화, 데이터 분석이 결합된 고난이도 애플리케이션입니다.
+
+- **Stack**: C#, WPF, VLC, HelixToolkit (3D)
+- **Key Features**:
+  - VLC 연동을 통한 고화질 경기 영상 제어 및 분석
+  - 선수 움직임의 3D 리플레이 및 시각화
+  - WebSocket을 이용한 실시간 경기 데이터 수신
+
+### 📺 Flywall
+**Description**
+디지털 사이니지 및 전광판 제어를 위한 유틸리티 소프트웨어입니다. 상용 수준의 라이선스 관리 및 백그라운드 스케줄링 기능을 포함합니다.
+
+- **Stack**: C#, .NET 6, WPF, Quartz.NET, WebDAV
+- **Key Features**:
+  - 다중 스크린 연동 및 미디어 재생
+  - 미디어 타임라인 컨트롤 및 스케줄링
+  - 시스템 트레이 상주 및 자동 실행 지원
+  - Mac Address를 통한 라이선스 관리(.NET 8)
+
+---
+
+## 💻 Web & GIS Projects
+
+### 📍 WHERE (Hanamicron)
+**Role**: **Frontend Developer (Location Features)**
+**Description**
+위치 정보 데이터 처리 및 실내 위치 기반의 트래킹 지원 시스템입니다. **실시간 위치 추적 시각화 및 공간 관련 기능(SVG/Map)** 개발을 주도했습니다.
+
+- **Stack**:  Thymeleaf, JavaScript, jQuery, CSS, Google Maps API, Shapefile, SVG, WebSocket
+- **Key Features**:
+  - 실시간 위치 데이터의 시각적 표현 (SVG/Canvas) 및 조작
+  - Shapefile 데이터를 통한 공간 데이터 처리
+  - 웹소켓을 통한 양방향 통신 지원
+
+### � PAR
+**Role**: **Frontend Developer (Location Features)**
+**Description**
+위치 정보 데이터 처리 및 실시간 통신 기능을 포함한 웹 애플리케이션입니다. **웹 기반의 공간 데이터 시각화** 구현을 담당했습니다.
+
+- **Stack**: JSP, JavaScript, jQuery, CSS, Google Maps API, SVG, WebSocket
+- **Key Features**:
+  - 실시간 위치 데이터의 시각적 표현 (SVG/Canvas) 및 조작
+  - WebSocket을 이용한 실시간 데이터 전송 및 지도 반영
+
+### 🌿 HNIBR / NNIBR (Biological Resources)
+**Role**: **Frontend Developer (GIS Features)**
+**Description**
+국립생물자원관 관련 프로젝트로, 방대한 생물 자원 데이터를 효율적으로 관리하고 검색할 수 있는 시스템입니다. **공간 정보(GIS) 시각화 및 데이터 처리** 영역을 전담하여 개발했습니다.
+
+- **Stack**: JSP, OpenLayers (GIS), JavaScript, jQuery, CSS
+- **Key Features**:
+  - 대용량 생물 자원 데이터의 공간 검색 및 필터링
+  - 통계 데이터 시각화 및 리포팅
+
+### 🗺️ SPECIES GEO / VISITANT GEO
+**Role**: **Frontend Developer (2nd Phase Enhancement - GIS Focus)**
+**Description**
+공간 정보 기반의 생물 종 서식지 및 철새 도래지 분석 시스템입니다. **2차 고도화** 단계에서 참여하여 **GIS 엔진 최적화 및 지도 인터페이스**를 전면 개편했습니다.
+
+- **Stack**: JSP, OpenLayers (GIS), JavaScript, jQuery, CSS
+- **Key Achievements**:
+  - **렌더링 최적화**: 대량의 위치 데이터 표출 시 발생하는 지연(Lag) 현상 해결
+  - **UI/UX 개선**: 사용자 친화적인 도구 모음 및 필터링 인터페이스 구축
+  - **기능 확장**: 상세 분석 도구, 레이어 관리, 히트맵 등 고급 GIS 기능 구현
+
+### 🌩️ QGX
+**Role**: **Frontend Developer**
+**Description**
+React와 Vite를 기반으로 구축된 최신 웹 애플리케이션 템플릿 및 서비스입니다.
+
+- **Stack**: React, Vite, i18next (Multi-language)
+- **Key Features**:
+  - 다국어 지원 (i18next) 및 테마 커스터마이징
+  - 사용자 경험(UX)을 고려한 애니메이션 및 토스트 알림
+  - 재사용 가능한 컴포넌트 및 레이아웃 시스템
+
+### � COALA CARE
+**Role**: **Full Stack Developer**
+**Description**
+신생아 낙상 위험 방지의 헬스케어 플랫폼입니다. **프론트엔드, 백엔드, LED Display(라즈베리파이)**을 담당하여 개발했습니다.
+
+- **Stack**: Java, Spring Boot, JSP, JavaScript, jQuery, CSS, MQTT, Mono, DietPi
+- **Key Features**:
+  - 낙상 위험 감지 모니터링
+  - LED Display를 통한 실시간 알림
+
+---
+
+## 📧 Contact
+- **Email**: [monitor.bk@gmail.com](mailto:monitor.bk@gmail.com)
+- **GitHub**: [github.com/oyeong-gyun](https://github.com/oyeong-gyun)
