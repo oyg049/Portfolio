@@ -13,20 +13,17 @@
 
 ### Languages & Core
 - **C#** (.NET Framework 4.x, .NET Core) **(Expert)**
-- **JavaScript (ES6+)** / **TypeScript**
-- **HTML5 / CSS3 (SCSS)**
+- **JavaScript (ES6+) / HTML5 / CSS3 (SCSS)**
 - **SQL** (SQLite)
 
 ### Desktop (.NET)
 - **Frameworks**: **WPF (Windows Presentation Foundation)**, **Entity Framework Core**
-- **Architecture**: **MVVM Pattern** (MVVM), REST API Design
-- **Communication**: **MQTT**, WebSocket, Named Pipes, TCP/IP, SOAP
+- **Architecture**: **MVVM Pattern**, DI/IoC
+- **Communication**: **MQTT**, WebSocket, Named Pipes, TCP/IP
 - **Hardware Control**: POS Peripherals, Serial Communication, MQTT, Modbus, TRDP
 
 ### Frontend (Web)
-- **Frameworks**: **JavaScript**, **jQuery**, **React** (Vite, Next.js)
-- **State Management**: Redux, Context API
-- **UI Libraries**: Ant Design, Material UI
+- **Frameworks**: **JavaScript**, **jQuery**, **React**
 - **GIS/Maps**: **OpenLayers**, Google Maps API, Shapefile, SVG
 
 ### Tools & Collaboration
@@ -105,7 +102,7 @@
 
 ---
 
-## Web & GIS Projects
+## Web Projects
 
 ### 1. WHERE
 **Frontend Developer (Location Features)**   
@@ -166,7 +163,7 @@ React와 Vite를 기반으로 구축된 최신 웹 애플리케이션 템플릿 
 
 ### 7. COALA CARE
 **Full Stack Developer**   
-신생아 낙상 위험 방지의 헬스케어 플랫폼입니다. **프론트엔드, 백엔드, LED Display(라즈베리파이)**을 담당하여 개발했습니다.
+신생아 낙상 위험 방지의 헬스케어 플랫폼입니다. **프론트엔드, 백엔드, LED Display(라즈베리파이)** 을 담당하여 개발했습니다.
 
 - **Stack**: Java, Spring Boot, JSP, JavaScript, jQuery, CSS, MQTT, Mono, DietPi, RGB-Matrix
 - **Key Features**:
