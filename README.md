@@ -48,15 +48,19 @@
   - 런처 등 다른 프로세스와의 통신을 위한 Named Pipe 활용
   - 자동 업데이트 기능
 
+![STEP VT Launcher](./dev-screenshot/STEP_VT02.png)
+
 ### 2. SAPOON (POS System)
 **Solo Developer**   
 사푼사푼 카페 프랜차이즈를 위한 종합 POS 시스템입니다. 주문 결제부터 재고 관리, 하드웨어 제어까지 매장 운영의 전 과정을 지원합니다.
 
-- **Stack**: C#, .NET Framework 4.8, WPF, SOAP, WebSocket, Hardware Integration
+- **Stack**: C#, .NET Framework 4.8, WPF, MVVM, SOAP, WebSocket, Hardware Integration
 - **Key Features**:
   - 신용카드, 현금, 포인트 등 다양한 결제 수단 지원 (KICC 연동)
   - 영수증 프린터, 바코드 스캐너 등 주변기기 제어
   - SOAP 및 소켓 통신을 이용한 서버 데이터 동기화
+
+![SAPOON_POS](./dev-screenshot/SAPOON02.png)
 
 ### 3. AlcoBrowser
 **Solo Developer**   
@@ -79,26 +83,32 @@
   - 다국어 지원 및 백그라운드 서비스 호스팅
   - 로컬 DB(SQLite)를 사용한 데이터 관리
 
+![Peak9 Rail](./dev-screenshot/PEAK9_Rail03.png)
+
 ### 5. LIVE COACH
 **Solo Developer**   
 아이스하키 경기 분석을 위한 전문가용 스포츠 분석 툴입니다. 영상 재생과 3D 시각화, 데이터 분석이 결합된 고난이도 애플리케이션입니다.
 
-- **Stack**: C#, WPF, VLC, HelixToolkit (3D)
+- **Stack**: C#, WPF, MVVM, VLC, HelixToolkit(3D)
 - **Key Features**:
   - VLC 연동을 통한 고화질 경기 영상 제어 및 분석
   - 선수 움직임의 3D 리플레이 및 시각화
   - WebSocket을 이용한 실시간 경기 데이터 수신
 
+![Live Coach](./dev-screenshot/LiveCoach01.png)
+
 ### 6. Flywall
 **Solo Developer**   
 디지털 사이니지 및 전광판 제어를 위한 유틸리티 소프트웨어입니다. 라이선스 관리 및 백그라운드 스케줄링 기능을 포함합니다.
 
-- **Stack**: C#, .NET 6, WPF, Quartz.NET, WebDAV
+- **Stack**: C#, .NET 6, WPF, MVVM, Quartz.NET, WebDAV
 - **Key Features**:
   - 다중 스크린 연동 및 미디어 재생
   - 미디어 타임라인 컨트롤 및 스케줄링
   - 시스템 트레이 상주 및 자동 실행 지원
   - Mac Address를 통한 라이선스 관리
+
+![Flywall](./dev-screenshot/Flywall01.png)
 
 ---
 
@@ -114,7 +124,20 @@
   - Shapefile 데이터를 통한 공간 데이터 처리
   - 웹소켓을 통한 양방향 통신 지원
 
-### 2. PAR
+![WHERE](./dev-screenshot/WHERE01.png)
+
+### 2. IOT STREET
+**Frontend Developer (Location Features)**   
+위치 정보 데이터 처리 및 장치 제어 시스템입니다.(평창 월화 거리) **웹 기반의 공간 데이터 시각화** 구현을 담당했습니다.
+
+- **Stack**:  Thymeleaf, JavaScript, jQuery, CSS, Google Maps API, Shapefile, SVG, WebSocket
+- **Key Features**:
+  - 위치 데이터의 시각적 표현 및 조작
+  - 웹소켓을 통한 장치제어 통신
+
+![IOT STREET](./dev-screenshot/IOT_STREET01.png)
+
+### 3. PAR
 **Frontend Developer (Location Features)**   
 위치 정보 데이터 처리 및 실내 위치 기반의 트래킹 지원 시스템입니다.(Unisinos University) **웹 기반의 공간 데이터 시각화** 구현을 담당했습니다.
 
@@ -123,7 +146,9 @@
   - 실시간 위치 데이터의 시각적 표현 및 조작
   - WebSocket을 이용한 실시간 데이터 전송 및 지도 반영
 
-### 3. Deliwave
+![PAR](./dev-screenshot/PAR01.png)
+
+### 4. Deliwave
 **Frontend Developer (Location Features)**   
 차도 경계 추돌 방지 및 알림 시스템입니다. **웹 기반의 공간 데이터 시각화** 구현을 담당했습니다.
 
@@ -132,7 +157,9 @@
   - 실시간 위치 데이터의 시각적 표현 및 조작
   - WebSocket을 이용한 실시간 데이터 전송 및 지도 반영
 
-### 4. HNIBR / NNIBR (Biological Resources)
+![Deliwave](./dev-screenshot/Deliwave.png)
+
+### 5. HNIBR / NNIBR (Biological Resources)
 **Frontend Developer (GIS Features)**   
 국립생물자원관 관련 프로젝트로, 방대한 생물 자원 데이터를 효율적으로 관리하고 검색할 수 있는 시스템입니다. **공간 정보(GIS) 시각화 및 데이터 처리** 영역을 전담하여 개발했습니다.
 
@@ -141,18 +168,8 @@
   - 대용량 생물 자원 데이터의 공간 검색 및 필터링
   - 통계 데이터 시각화 및 리포팅
 
-### 5. SPECIES GEO / VISITANT GEO
-**Frontend Developer (2nd Phase Enhancement - GIS Focus)**   
-공간 정보 기반의 생물 종 서식지 및 철새 도래지 분석 시스템입니다. **2차 고도화** 단계에서 참여하여 **GIS 엔진 최적화 및 지도 인터페이스**를 전면 개편했습니다.
-
-- **Stack**: JSP, OpenLayers (GIS), JavaScript, jQuery, CSS
-- **Key Achievements**:
-  - **렌더링 최적화**: 대량의 위치 데이터 표출 시 발생하는 지연(Lag) 현상 해결
-  - **UI/UX 개선**: 사용자 친화적인 도구 모음 및 필터링 인터페이스 구축
-  - **기능 확장**: 상세 분석 도구, 레이어 관리, 히트맵 등 고급 GIS 기능 구현
-
 ### 6. QGX
-**Frontend Developer**   
+**Frontend Developer()**   
 React와 Vite를 기반으로 구축된 최신 웹 애플리케이션 템플릿 및 서비스입니다.
 
 - **Stack**: React, Vite, i18next (Multi-language)
