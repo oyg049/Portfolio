@@ -1,7 +1,7 @@
 # Developer Portfolio
 
 ## Introduction
-**.NET 기반의 데스크톱 애플리케이션 개발(WPF)**을 주력으로 하며, **웹 프론트엔드 개발** 역량을 겸비한 소프트웨어 엔지니어 입니다.
+**.NET 기반의 데스크톱 애플리케이션 개발(WPF)** 을 주력으로 하며, **웹 프론트엔드 개발** 역량을 겸비한 소프트웨어 엔지니어 입니다.
 
 강력한 퍼포먼스와 안정성이 요구되는 **산업용 애플리케이션** 및 **제조 현장(Kiosk, POS)** 전문 개발 경험을 가지고 있습니다. 또한, 이러한 경험을 바탕으로 **웹 프론트엔드 개발** 영역에서도 직관적인 UI/UX와 **GIS(공간 정보)** 시각화 기능 구현 역량을 가지고 있습니다.
 
@@ -83,7 +83,7 @@
   - 다국어 지원 및 백그라운드 서비스 호스팅
   - 로컬 DB(SQLite)를 사용한 데이터 관리
 
-![Peak9 Rail](./dev-screenshot/PEAK9_Rail03.png)
+![Peak9 Rail](./dev-screenshot/Peak9_Rail03.png)
 
 ### 5. LIVE COACH
 **Solo Developer**   
